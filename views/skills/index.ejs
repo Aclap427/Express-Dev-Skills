@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Amanda's Skills</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Skills...
+        </h1>
+        <ul>
+            <% skills.forEach(function(t) { %>
+                <li>
+                    <form action="/skills/<%= t.id %>?_method=DELETE" class="delete-form" method="POST">
+                        <button type="submit">X</button>
+                    </form>
+                    <%= t.skill %>
+                        -
+                        <%= t.done ? 'done' : 'not done' %>
+                </li>
+                <% }); %>
+        </ul>
+        <a href="/skills/new" id="newInput">Add a New Skill</a><br>
+        <br> <a href="/" class="home">Back to Home</a><br><br></div>
+
+
+</body>
+
+</html>
