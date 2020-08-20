@@ -20,6 +20,7 @@ function show(req, res) {
     console.log(req.params, '<--- this is req.params')
     res.render('skills/show', {
         skill: Skill.getOne(req.params.id),
+        skillNum: Skill.getAll().findIndex(skill => skill.id === parseInt(req.params.id)) + 1
 
     });
 }
