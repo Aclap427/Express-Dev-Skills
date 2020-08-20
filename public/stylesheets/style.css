@@ -20,8 +20,8 @@ a {
     font-size: 20px;
 }
 
-#numSkill {
-    background-color: white;
+#back {
+    margin-left: 20px;
 }
 
 input {
@@ -48,6 +48,10 @@ h1 {
     margin-left: 20px;
     color: black;
     font-size: 30px;
+}
+
+h3 {
+    margin-left: 20px;
 }
 
 .container {

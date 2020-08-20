@@ -9,15 +9,19 @@
 </head>
 
 <body>
-    <h1>Skill #
-        <%= skillNum %>
-    </h1>
-    <h3>
-        <%= skill.skill %>
-    </h3>
-    <h3>Complete:
-        <%= skill.done ? 'Yes' : 'No' %>
-    </h3>
+    <div class="container">
+        <h1>Skill #
+            <%= skillNum %>
+        </h1>
+        <h3>
+            <%= skill.skill %>
+        </h3>
+        <h3>Complete:
+            <%= skill.done ? 'Yes' : 'No' %>
+        </h3>
+        <a href="/skills" id="back">Back to skill list</a>
+        <br><br>
+    </div>
 </body>
 
 </html>
